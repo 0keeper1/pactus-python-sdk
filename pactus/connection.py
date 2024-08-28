@@ -17,7 +17,7 @@ __all__ = ["PactusConnect"]
 class PactusConnect:
     def __init__(self, url: str, key: str | NoneType = None) -> None:
         self._url = url
-        self._private_key = key
+        self._private_key: str | None = key
         self._channel: Channel | NoneType = None
 
     def connect(self, secure: bool = False, credentials=None) -> Self:

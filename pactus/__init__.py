@@ -1,4 +1,4 @@
-from .apis import Network
+from .apis import Network, Transaction
 from .connection import PactusConnect
 
-__all__ = ["PactusConnect", "Network"]
+__all__ = ["PactusConnect", "Network", ]
